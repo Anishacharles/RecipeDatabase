@@ -1,0 +1,52 @@
+                          API Documentation
+
+Base URL:  http://localhost:6501/api/recipes
+1.Create a new recipe.
+Method: GET
+URL: /
+Description: Adds a new recipe to the database.
+Headers: None
+Response:
+Success (200): List of recipes
+Error (500): Internal server error
+2. Retrieve all recipes.
+Method: GET
+URL: /
+Description: Get a list of all recipes.
+Headers: None
+Response:
+Success (200): List of recipes
+Error (500): Internal server error
+3.  Retrieve a single recipe by ID.
+Method: GET
+URL: /:id
+Description: Get a specific recipe by ID.
+Headers: None
+URL Params: id (Recipe ID)
+Response:
+Success (200): Recipe details
+Error (404): Recipe not found
+4.Update a recipe by ID.
+
+Method: PUT
+URL: /:id
+Description: Update an existing recipe.
+Headers:
+Content-Type: application/json
+Response:
+Success (200): Recipe updated
+Error (404): Recipe not found
+Error (400): Invalid input
+Error (500): Internal server error
+5. Delete a Recipe
+Method: DELETE
+URL: /:id
+Description: Delete a recipe.
+Headers: None
+Response:
+Success (200): Recipe deleted
+Error (404): Recipe not found
+
+
+
+
